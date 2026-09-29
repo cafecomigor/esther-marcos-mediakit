@@ -136,6 +136,36 @@
   .age-row .a-val{font-size:13px; color:var(--ink-2); text-align:right;}
   .publico-note{margin-top:18px; font-size:12.5px; color:var(--ink-muted); line-height:1.5;}
 
+  /* ---------- PARCERIAS ---------- */
+  #parcerias{background:var(--surface-alt); border-bottom:1px solid var(--hairline);}
+  .brands-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:16px;}
+  .brand-card{
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px;
+    border:1px solid var(--hairline);
+    border-radius:4px;
+    padding:28px 20px 22px;
+    text-align:center;
+    background:var(--surface-card);
+    text-decoration:none;
+    transition:border-color .15s ease, transform .15s ease;
+  }
+  .brand-card:hover{border-color:var(--accent); transform:translateY(-3px);}
+  .brand-card img{max-height:32px; max-width:130px; width:auto; object-fit:contain;}
+  .brand-card .brand-name{
+    font-family:"Jost",sans-serif;
+    font-size:11px;
+    letter-spacing:0.05em;
+    text-transform:uppercase;
+    color:var(--ink-2);
+  }
+  .brand-card .brand-tag{
+    font-size:10px;
+    letter-spacing:0.05em;
+    color:var(--ink-muted);
+    font-style:italic;
+    font-family:"Cormorant Garamond",serif;
+  }
+
   footer{padding:64px 0 40px; text-align:center; border-top:1px solid var(--hairline);}
   footer .fine{font-size:12px; color:var(--ink-muted);}
 
@@ -200,6 +230,11 @@
         <div class="p-stat">877 mil</div>
         <div class="p-stat-label">seguidores</div>
       </div>
+      <div class="platform-card">
+        <div class="p-name">YouTube</div>
+        <div class="p-stat">887 mil</div>
+        <div class="p-stat-label">inscritos</div>
+      </div>
     </div>
   </div>
 </section>
@@ -256,6 +291,26 @@
         </div>
         <p class="publico-note">95,1% do público informou a faixa etária — os 4,9% restantes não foram categorizados pelo Instagram.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="parcerias">
+  <div class="wrap">
+    <p class="kicker">Parcerias</p>
+    <h2 class="title">Trajetória e credibilidade</h2>
+    <div class="brands-grid">
+      <a class="brand-card" href="https://www.glorify.global/" target="_blank" rel="noopener">
+        <img src="images/logos/glorify.svg" alt="Glorify">
+        <span class="brand-name">Glorify</span>
+        <span class="brand-tag">ex-embaixadora</span>
+      </a>
+      <a class="brand-card" href="https://www.sbt.com.br/" target="_blank" rel="noopener">
+        <img src="images/logos/sbt.webp" alt="SBT"><span class="brand-name">SBT</span>
+      </a>
+      <a class="brand-card" href="https://www.editoravida.com.br/" target="_blank" rel="noopener">
+        <img src="images/logos/editora-vida.webp" alt="Editora Vida"><span class="brand-name">Editora Vida</span>
+      </a>
     </div>
   </div>
 </section>
