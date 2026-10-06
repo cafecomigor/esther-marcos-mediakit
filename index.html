@@ -152,8 +152,19 @@
   }
   .brand-card .brand-tag{font-family:"Cormorant Garamond", serif; font-style:italic; font-size:13px; color:#7a6358;}
 
-  footer{padding:72px 0 48px; text-align:center;}
-  footer .fine{font-size:12px; color:var(--ink-muted);}
+  footer{padding:96px 0 56px; text-align:center; border-top:1px solid var(--hairline);}
+  footer .kicker{margin-bottom:18px;}
+  footer h2{font-size:clamp(30px,4vw,42px); font-style:italic; margin:0 0 14px; color:var(--ink);}
+  footer p.lead{max-width:460px; margin:0 auto 34px; font-size:16px;}
+  .btn-contato{
+    display:inline-block; padding:16px 40px; background:var(--accent); color:var(--surface);
+    text-decoration:none; font-family:-apple-system, "Segoe UI", sans-serif;
+    font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase;
+    transition:opacity .18s ease;
+  }
+  .btn-contato:hover{opacity:0.88;}
+  footer .email{display:block; margin-top:18px; font-size:14px; color:var(--ink-muted);}
+  footer .fine{font-size:12px; color:var(--ink-muted); margin-top:56px;}
 
   @media (max-width:640px){
     section{padding:64px 0;}
@@ -325,6 +336,11 @@
 
 <footer>
   <div class="wrap">
+    <p class="kicker">Contato</p>
+    <h2>Vamos conversar</h2>
+    <p class="lead">Para parcerias, campanhas e propostas, fale diretamente pelo e-mail abaixo.</p>
+    <a class="btn-contato" href="mailto:contatoesthermarcos@gmail.com">Enviar e-mail</a>
+    <span class="email">contatoesthermarcos@gmail.com</span>
     <p class="fine">Esther Marcos — mídia kit atualizado periodicamente.</p>
   </div>
 </footer>
